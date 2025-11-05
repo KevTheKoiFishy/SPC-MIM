@@ -1,0 +1,17 @@
+.vscode/
+.venv
+.DS_Store
+
+python_env/
+__pycache__/
+.ipynb_checkpoints
+*.pyc
+*.pyo
+*.pyd
+env/
+build/
+dist/
+*.egg-info/
+.idea/
+*.swp
+*.swo
