@@ -2,6 +2,8 @@
 .venv
 .DS_Store
 
+**/Data/Raw
+
 python_env/
 __pycache__/
 .ipynb_checkpoints
