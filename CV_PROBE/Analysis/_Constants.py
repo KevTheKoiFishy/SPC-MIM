@@ -10,7 +10,7 @@ SIGMA = {
 }
 
 LOSST = {
-    "HfO2" : 0.1465,
+    "HfO2" : 9.5884e-03,
 }
 
 DIELECTRIC       = "HfO2"
