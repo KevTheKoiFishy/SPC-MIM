@@ -9,8 +9,13 @@ SIGMA = {
     "HfO2" : lambda f: 3.550400e-6
 }
 
+LOSST = {
+    "HfO2" : 0.1465,
+}
+
 DIELECTRIC       = "HfO2"
 MEASUREMENT_FREQ = 10e3
+MEAS_FREQ_ANG    = MEASUREMENT_FREQ * np.pi * 2
 
 D = np.linspace(100, 1000, 10) * 1e-6   # Diameters of circular parallel plate capacitors
 A = np.pi * D * D * 0.25                # Surface area of overlapping plates

@@ -33,5 +33,5 @@ def format_suffix(f) -> str:
 def get_expected_Cp_by_Diameter(eps_r):
     return dict(zip(list(D), EPS_0 * eps_r * A / S))
 
-def get_expected_Gp_by_Diameter(sigma):
-    return dict(zip(list(D), sigma * A / S))
+# def get_expected_Gp_by_Diameter(sigma):
+#     return dict(zip(list(D), sigma * A / S))
