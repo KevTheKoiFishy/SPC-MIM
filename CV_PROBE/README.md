@@ -32,7 +32,7 @@
 
 - `Analysis/` Folder. Plotting, regression, correlation finding.
 
-  - `Eps_R_Estimate.ipynb` estimates the true dielectric constant at the measurement  
+  - `Estimate_Eps_r.ipynb` estimates the true dielectric constant at the measurement  
     frequency via minimizing MSE between theoretical and measured capacitances across  
     all measurements and voltages. Use same frequency for all CV measurements.  
     Requires parallel plate assumption.
