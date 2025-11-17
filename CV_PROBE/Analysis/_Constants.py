@@ -2,7 +2,7 @@ import numpy as np
 
 EPS_0 = 8.854e-12
 EPS_R = {
-    "HfO2" : lambda f: 17.582400
+    "HfO2" : lambda f: 17.7028
 }
 
 SIGMA = {

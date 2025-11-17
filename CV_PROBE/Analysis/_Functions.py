@@ -30,8 +30,9 @@ def format_suffix(f) -> str:
     # f was not a number
     return f"{0.0:8.2f}  "
 
-def get_expected_Cp_by_Diameter(eps_r):
-    return dict(zip(list(D), EPS_0 * eps_r * A / S))
+def get_expected_Cp_by_Diameter(eps_r = EPS_R[DIELECTRIC](MEASUREMENT_FREQ), diameters = D, separation = S):
+    areas = 0.25 * diameters * diameters * np.pi;
+    return dict(zip(list(diameters), EPS_0 * eps_r * areas / separation))
 
 # def get_expected_Gp_by_Diameter(sigma):
 #     return dict(zip(list(D), sigma * A / S))

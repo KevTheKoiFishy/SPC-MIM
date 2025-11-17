@@ -32,9 +32,21 @@
 
 - `Analysis/` Folder. Plotting, regression, correlation finding.
 
-  - `Estimate_Eps_r.ipynb` estimates the true dielectric constant at the measurement  
-    frequency via minimizing MSE between theoretical and measured capacitances across  
-    all measurements and voltages. Use same frequency for all CV measurements.  
-    Requires parallel plate assumption.
+  - `Estimate_Eps_r.ipynb`
+    - estimates the true dielectric constant $\epsilon_{r}$ at the measurement  
+      frequency via minimizing MSE between theoretical and measured capacitances $C_{p}$ across  
+      all measurements and voltages. Use same frequency for all CV measurements.  
+    - Also finds the $\tan(\delta)$ that minimizes the MSE between theoretical and measured  
+      conductances $G_{p}$.  
+    - Also calculates the median derived $\epsilon_{r}$ and $\tan(\delta)$   
+      **Note:** Requires parallel plate assumption!!!
+  - `Expected_Cp_Gp_by_Diameter.ipynb`
+    - After putting either the min-MSE or median $\epsilon_{r}$ and $\tan(\delta)$ into  
+      `_Constants.py`, calculates the expected $C_{p}$ and $G_{p}$ values for each dimaeter  
+      capcitor specified in `_Constants.py`.
+  - `Selected_Graphs.ipynb`
+    - Line plots of expected capcitance by area and measured capacitance by area:
+      - Divided by wafer, then group
+      - Divided by wafer only
 
 - `Figures/` Folder. Where figures and tables are saved.
