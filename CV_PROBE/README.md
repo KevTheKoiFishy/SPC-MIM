@@ -10,7 +10,7 @@
     formatted `Run1`, `Run2`, etc. and contain the following:  
     - An excel `*.xls` file containing the Voltage VS Capacitance Sweep  
     - A markup `.xml` file containing the name (aka "username") given to the run  
-    - **NOTE:** Owing to large file size, `Data/Raw` is not tracked by git.  
+    - **NOTE:** Owing to large file size, `Data/Raw` is git-ignored.  
 
   - `Parse_Data.ipynb`:
     1. Parses File Names. Auto-detects and parses most naming conventions; <u>_see file for docs._</u>
